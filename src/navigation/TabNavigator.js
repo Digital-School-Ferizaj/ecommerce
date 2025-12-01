@@ -1,6 +1,7 @@
 import React from 'react';
 import {HomeStack, AboutStack} from './StackNavigation';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { PRIMARY_COLOR } from '../components/variabla';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -36,12 +37,12 @@ const TabNavigator = () => {
 
 const screenOptionStyle = {
   headerShown: true,
-  headerStyle: { backgroundColor: '#f4511e' },
+  headerStyle: { backgroundColor: PRIMARY_COLOR },
   headerTintColor: '#fff',
   headerTitleStyle: { fontWeight: 'bold' },
 
   tabBarStyle: {
-    backgroundColor: '#f4511e',
+    backgroundColor: PRIMARY_COLOR,
   },
   tabBarActiveTintColor: '#fff', // Color for active tab icon/label
   tabBarInactiveTintColor: '#ffffffa6',
