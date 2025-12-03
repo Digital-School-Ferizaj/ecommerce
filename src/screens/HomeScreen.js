@@ -2,6 +2,9 @@ import  react from 'react';
 import { PRIMARY_COLOR } from '../components/variabla';
 import { StyleSheet, Text, View } from 'react-native';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import IconComp from '../components/IconComp';
+
+// import Swiper from 'react-native-swiper';
 
 export default function HomeScreen() {
     return (
@@ -54,14 +57,14 @@ export default function HomeScreen() {
             */}
             
             <View style={styles.iconsContainer}>
-                <MaterialCommunityIcons name="apple" size={24} color={PRIMARY_COLOR} iconText="Apple" />
-                <MaterialCommunityIcons name="android" size={24} color={PRIMARY_COLOR} iconText="Android" />
-                <MaterialCommunityIcons name="laptop" size={24} color={PRIMARY_COLOR} iconText="Laptop" />
+                <IconComp iconName="apple" iconText="Apple" />
+                <IconComp iconName="android" iconText="Android" />
+                <IconComp iconName="laptop" iconText="Laptop" />
             </View>
             <View style={styles.iconsContainer}>
-                <MaterialCommunityIcons name="tablet" size={24} color={PRIMARY_COLOR} iconText="Tablet" />                
-                <MaterialCommunityIcons name="mouse" size={24} color={PRIMARY_COLOR} iconText="Mouse" />
-                <MaterialCommunityIcons name="keyboard" size={24} color={PRIMARY_COLOR} iconText="Keyboard" />
+                <IconComp iconName="tablet" iconText="Tablet" />                
+                <IconComp iconName="mouse" iconText="Mouse" />
+                <IconComp iconName="keyboard" iconText="Keyboard" />
             </View>
         </View>
     );
