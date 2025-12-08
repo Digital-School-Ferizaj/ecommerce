@@ -87,9 +87,9 @@ class HomeScreen extends react.Component {
                     <Text style={styles.title}>Most Popular Products</Text>
                     <FlatList
                         data={this.state.products.popularproducts}
-                        renderItem={({product}) => (
+                        renderItem={({item}) => (
                             <View>
-                                <ProductComp item={product} />
+                                <ProductComp item={item} />
                             </View>
                         )}
                     />
@@ -105,27 +105,22 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
     },
-
     sliderContainer: {
-        width: '90%',
+        width: '100%',
         height: 200,
         justifyContent: 'center',
         alignSelf: 'center',
-        marginTop: 10,
-        borderRadius: 8
+        backgroundColor: 'lightgray'
     },
 
     imgItem: {
         width: '100%',
         height: '100%',
-        borderRadius: 8,
     },
-
     item: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
-
     iconsContainer: {
         width: '90%',
         alignSelf: 'center',
@@ -139,6 +134,27 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 16
     },
+    productsContainer: {
+        marginHorizontal: 20,
+    },
+
+    btn: {
+        backgroundColor: '#22D4FF',
+        height: 50,
+        borderRadius: 8,
+        justifyContent: 'center',
+        marginBottom: 20
+    },
+    btnText: {
+        color: 'white',
+        textAlign: 'center',
+        fontWeight: 'bold',
+        
+    },
+    textStyle: {
+        fontSize: 15,
+        marginBottom: 20
+    }
 });
 
 

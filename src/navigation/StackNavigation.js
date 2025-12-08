@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from "../screens/HomeScreen";
 import AboutScreen from "../screens/AboutScreen";
 import { PRIMARY_COLOR } from '../components/variabla';
+import SingleProduct from '../screens/SingleProduct';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,6 +11,7 @@ const HomeStack = ({navigation}) => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="SingleProduct" component={SingleProduct} />
     </Stack.Navigator>
   );
 }
@@ -18,6 +20,7 @@ const AboutStack = ({navigation}) => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="About" component={AboutScreen} />
+      <Stack.Screen name="SingleProduct" component={SingleProduct} />
     </Stack.Navigator>
   );
 }

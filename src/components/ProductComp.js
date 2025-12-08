@@ -21,7 +21,7 @@ const ProductComp = ({item}) => {
                     <Text style={styles.productTitle}>{item.name}</Text>
                     <Text style={styles.productCategory}>{item.category}</Text>
                     <Text style={styles.productDescription}>{item.description}</Text>
-                    <Text style={styles.productPrice}>${item.price}</Text>
+                    <Text style={styles.productPrice}>{item.price}</Text>
                 </View>
             </View>
         </TouchableOpacity>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
         color: 'white',
         borderRadius: 100,
         paddingHorizontal: 5,
-        width: 45
+        width: 75
     }
 });
 
