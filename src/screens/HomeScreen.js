@@ -73,8 +73,12 @@ class HomeScreen extends react.Component {
                 */}
                 
                 <View style={styles.iconsContainer}>
-                    <IconComp iconName="apple" iconText="Apple" />
-                    <IconComp iconName="android" iconText="Android" />
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('IOSscreen')}>
+                        <IconComp iconName="apple" iconText="Apple" />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('AndroidScreen')}>
+                        <IconComp iconName="android" iconText="Android" />
+                    </TouchableOpacity>
                     <IconComp iconName="laptop" iconText="Laptop" />
                 </View>
                 <View style={styles.iconsContainer}>
