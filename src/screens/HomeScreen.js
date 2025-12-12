@@ -4,8 +4,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, ScrollView, 
 import IconComp from '../components/IconComp';
 import ProductComp from '../components/ProductComp';
 import data from '../data/data.json';
-
-// import Swiper from 'react-native-swiper';
+import Swiper from 'react-native-swiper';
 
 class HomeScreen extends react.Component {
 
@@ -26,7 +25,6 @@ class HomeScreen extends react.Component {
         return (
             <View style={styles.container}>
                 
-                {/*
                 <View style={styles.sliderContainer}>
                         <Swiper
                         autoplay
@@ -56,13 +54,6 @@ class HomeScreen extends react.Component {
                         </View>
                         <View style={styles.item}>
                             <Image 
-                                source={require('../../assets/banner-6.jpg')}
-                                style={styles.imgItem}
-                                resizeMode="cover"
-                            />
-                        </View>
-                        <View style={styles.item}>
-                            <Image 
                                 source={require('../../assets/banner-1.jpg')}
                                 style={styles.imgItem}
                                 resizeMode="cover"
@@ -70,7 +61,6 @@ class HomeScreen extends react.Component {
                         </View>
                     </Swiper>
                 </View>
-                */}
                 
                 <View style={styles.iconsContainer}>
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('IOSscreen')}>
